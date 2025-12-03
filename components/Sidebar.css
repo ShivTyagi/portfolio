@@ -1,0 +1,96 @@
+/* Floating Sidebar Container */
+.floating-sidebar {
+  position: fixed;
+  top: 20px;
+  left: 25px;
+  z-index: 2000;
+  width: 60px;
+  height: 60px;
+
+  background: rgba(50, 50, 50, 0.92);
+  backdrop-filter: blur(8px);
+
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  outline: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Expanded State */
+.floating-sidebar.open {
+  width: 60px;
+  height: 300px;
+  border-radius: 50px;
+  padding-top: 30px;
+}
+
+/* Floating Button */
+.floating-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  width: 40px;
+  height: 40px;
+
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+
+  cursor: pointer;
+  z-index: 3000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Nav Container */
+.floating-nav {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  width: 100%;
+
+  margin-top: 20px;
+}
+
+/* Show nav when open */
+.floating-sidebar.open .floating-nav {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Nav Items */
+.nav-item {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 15px 0;
+  transition: 0.2s ease;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-icon {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* Labels */
+.nav-item span {
+  font-size: 13px;
+  font-weight: 500;
+}

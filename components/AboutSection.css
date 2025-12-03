@@ -1,0 +1,195 @@
+/* Section Wrapper */
+.about-wrapper {
+  padding: 80px 40px;
+  color: #222;
+}
+
+/* Title Area */
+.about-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-title h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Main Layout: Image + Details */
+.about-content {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Left Image Container */
+.about-image-frame {
+  position: relative;
+  width: 360px;
+  height: 420px;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2; 
+}
+
+.frame-border {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 360px;
+  height: 420px;
+  border: 5px solid var(--primary-color);
+  z-index: 1;    /* change to 1 */
+}
+
+
+/* Right Details Grid */
+.about-details {
+  max-width: 550px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 30px;
+  margin-bottom: 30px;
+}
+
+.detail-item strong {
+  color: #222;
+}
+
+/* CV Button */
+.cv-btn {
+  background: #dca622;
+  color: white;
+  padding: 15px 35px;
+  font-weight: 600;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.cv-btn:hover {
+  background: #b88c1c;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frame-border {
+    display: none;
+  }
+}
+
+
+/* SECTION TITLES */
+.section-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* ===========================
+      EXPERIENCE TIMELINE
+   =========================== */
+.timeline {
+  border-left: 2px solid var(--primary-color);
+  padding-left: 30px;
+  margin-top: 20px;
+  max-width: 45vw;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -38px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.timeline-content .year {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.timeline-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.timeline-content h3 span {
+  color: var(--primary-color);
+}
+
+.timeline-content .desc {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===========================
+           SKILLS
+   =========================== */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.skill-item {
+  width: 100%;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background: #e9e9e9;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 50px;
+}
