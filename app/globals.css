@@ -1,7 +1,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary-color: #1e90ff; /* default blue */
+  --primary-color: #ffa726; /* default blue */
   --primary-hover : #555555;
   --primary-light: #4ba3ff;
   --button-bg: var(--primary-color);

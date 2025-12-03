@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Button from "@/components/UI/Button";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
@@ -71,12 +72,19 @@ export default function Hero() {
         </p>
 
         <div className="hero-buttons">
+          <Link href="/about">
+
       <Button variant="primary"> <FontAwesomeIcon icon={faUser} />
- MORE ABOUT ME</Button>
-      <Button variant="outline"> 
+ MORE ABOUT ME</Button> 
+ </Link>
+   <Link href="/portfolio">
+
+    <Button variant="outline"> 
         <FontAwesomeIcon icon={faBriefcase} />
 
         PORTFOLIO</Button>
+   </Link>
+     
         </div>
       </div>
     </section>
