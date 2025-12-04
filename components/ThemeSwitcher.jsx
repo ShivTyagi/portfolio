@@ -9,12 +9,12 @@ import { faGear } from "@fortawesome/free-solid-svg-icons";
 import "./ThemeSwitcher.css";
 
 const colors = [
-  "#1e90ff",
-  "#ff5252",
-  "#ffa726",
-  "#66bb6a",
-  "#ba68c8",
-  "#fbc02d",
+  {color : "#1e90ff", overlay : "#0006207a"},
+  {color : "#ff5252", overlay : "#2001017a"},
+  {color : "#ffa726", overlay : "#0000007a"},
+  {color : "#66bb6a", overlay : "#0012017a"},
+  {color : "#ba68c8", overlay : "#17011c7a"},
+  {color : "#fbc02d", overlay : "#0006207a"}
 ];
 
 export default function ThemeSwitcher() {
@@ -36,9 +36,9 @@ export default function ThemeSwitcher() {
         <div className="color-grid">
           {colors.map((c) => (
             <span
-              key={c}
+              key={c.color}
               className="color-circle"
-              style={{ background: c }}
+              style={{ background: c.color }}
               onClick={() => applyTheme(c)}
             />
           ))}

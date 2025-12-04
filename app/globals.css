@@ -2,6 +2,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary-color: #ffa726; /* default blue */
+  --primary-color-over: #ffa726; /* default blue */
+  --primary-hex-alpha: #0000007A;
   --primary-hover : #555555;
   --primary-light: #4ba3ff;
   --button-bg: var(--primary-color);
