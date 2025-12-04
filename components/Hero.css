@@ -87,3 +87,29 @@
     text-align: center;
   }
 }
+
+
+@media (max-width: 600px) {
+  .hero {
+    align-items: flex-start; /* <<< FIX */
+    justify-content: flex-start; 
+    padding-top: 40%;
+     background: url("/images/final-10.png") -500px / cover no-repeat;
+  }
+
+  .hero-content {
+  position: relative;
+  max-width: 650px;
+  margin-left: 0vw;
+  
+}
+
+.title{
+  font-size: 22px;
+}
+
+.hero-subtitle{
+  font-size: 13px;
+}
+
+}
